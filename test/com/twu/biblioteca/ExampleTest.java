@@ -17,7 +17,6 @@ public class ExampleTest {
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }
-    BibliotecaApp biliotecaApp = new BibliotecaApp();
 
     @Test
     public void test() {
@@ -26,12 +25,18 @@ public class ExampleTest {
 
     @Test
     public void testWelcome() throws Exception {
+        BibliotecaApp biliotecaApp = new BibliotecaApp();
+
         System.out.println("hello,world!");
         assertEquals("hello,world!\n", outContent.toString());
     }
 
     @Test
     public void testShowBooksAfterWelcome() throws Exception {
+        BibliotecaApp biliotecaApp = new BibliotecaApp();
+        biliotecaApp.AppInit();
+        biliotecaApp.showBooks();
+
         assertEquals("<<Lean Thinking>>\n<<Clean Code>>\n", outContent.toString());
     }
 }
