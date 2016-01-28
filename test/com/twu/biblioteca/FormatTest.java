@@ -18,10 +18,10 @@ public class FormatTest {
 
     @Test
     public void testFormat() throws Exception {
-        String name = "<<Lean Thinking>>";
+        String name = "Lean Thinking";
         String author = "James P. Womack";
         String date = "2003.06.01";
-        String buffer = String.format("%s\t%s\t%s", name, author, date);
+        String buffer = String.format("<<%s>>\t%s\t%s", name, author, date);
         System.out.println(buffer);
 
         assertEquals("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n", outContent.toString());
