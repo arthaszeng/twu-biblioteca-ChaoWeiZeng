@@ -29,4 +29,10 @@ public class BibliotecaApp {
             System.out.println("error! The book does not exist!");
         }
     }
+
+    public static void main(String args[]){
+        BibliotecaApp biliotecaApp = new BibliotecaApp();
+        biliotecaApp.AppInit();
+        biliotecaApp.showBooks();
+    }
 }
