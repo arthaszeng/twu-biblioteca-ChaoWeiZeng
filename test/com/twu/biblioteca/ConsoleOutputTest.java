@@ -7,6 +7,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class ConsoleOutputTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -36,11 +38,10 @@ public class ConsoleOutputTest {
 
     @Test
     public void testShowBookDetails() throws Exception {
-        BibliotecaApp biliotecaApp = new BibliotecaApp();
+        BibliotecaApp biliotecaApp = mock(BibliotecaApp.class);
         Books leanThinking = new Books("Lean Thinking", "James P. Womack", "2003.06.01");
-        biliotecaApp.showOneBook(leanThinking);
 
-        assertEquals("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" ,outContent.toString());
-    }
+        when(biliotecaApp.showOneBook(leanThinking)).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n");
+ }
 
 }

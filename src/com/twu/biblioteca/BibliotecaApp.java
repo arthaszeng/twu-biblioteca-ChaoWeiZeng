@@ -20,11 +20,14 @@ public class BibliotecaApp {
         }
     }
 
-    public void showOneBook(Books book) {
+    public String showOneBook(Books book) {
         if (book.getName()!=null || book.getAuthor()!= null || book.getDate() != null){
-            System.out.println(Format.format(book.getName(), book.getAuthor(), book.getDate()));
+            String buffer = Format.format(book.getName(), book.getAuthor(), book.getDate());
+            System.out.println(buffer);
+            return buffer;
         }else{
             System.out.println("error! The book does not exist!");
+            return null;
         }
     }
 
