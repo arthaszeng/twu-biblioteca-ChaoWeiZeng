@@ -10,7 +10,8 @@ public class UserMenu {
     public String show() {
         String buffer = "";
         for (Iterator i = options.iterator(); i.hasNext();){
-            buffer += (String)i.next() + "\n";
+            String buf = (String)i.next();
+            buffer +=  "[" + buf.charAt(0) + "]" + buf + "\n";
         }
         System.out.println(buffer);
         return buffer;
