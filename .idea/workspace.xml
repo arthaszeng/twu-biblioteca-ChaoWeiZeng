@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf99691e-987e-423d-bbb1-a423d5643fec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuFormat.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Format.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BooksFormat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/FormatTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/FormatTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
     </list>
     <ignored path="biblioteca.iws" />
@@ -31,6 +24,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="biblioteca" />
   </component>
@@ -40,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleOutputTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,10 +45,12 @@
       <file leaf-file-name="MenuTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27160493">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.5185185">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,9 +60,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,11 +178,11 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BooksData.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Format.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleOutputTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/MenuFormat.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BooksFormat.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/FormatTest.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleOutputTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
       </list>
@@ -810,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454007485523</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactor">
+      <created>1454009688566</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1454009688566</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -820,26 +824,26 @@
     <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 32m 32s.xml">
       <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 24m 02s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 37m 31s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 25m 09s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 38m 50s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 27m 20s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 38m 52s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 28m 47s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 39m 13s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 30m 22s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 44m 33s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 31m 22s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 45m 18s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 31m 34s.xml">
-      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    <history-entry file="MenuTest_testOneOption - 2016.01.29 at 03h 47m 12s.xml">
+      <configuration name="MenuTest.testOneOption" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_twu_biblioteca_in_biblioteca - 2016.01.29 at 03h 31m 47s.xml">
       <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
@@ -865,7 +869,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19296375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19296375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17117684" sideWeight="0.49009246" order="0" side_tool="false" content_ui="combo" />
@@ -902,7 +906,8 @@
     <MESSAGE value="Use mockito replace the old test successful." />
     <MESSAGE value="Menu initial test" />
     <MESSAGE value="change to show &quot;[ L ]  List Books&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to show &quot;[ L ]  List Books&quot;" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1072,6 +1077,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.11.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34615386">
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/FormatTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1085,17 +1110,7 @@
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleOutputTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1104,10 +1119,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27160493">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.5185185">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
           </folding>
         </state>
       </provider>
