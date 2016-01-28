@@ -37,17 +37,18 @@ public class ExampleTest {
         biliotecaApp.AppInit();
         biliotecaApp.showBooks();
 
-        assertEquals("<<Lean Thinking>>\n<<Clean Code>>\n", outContent.toString());
+        assertEquals("<<Lean Thinking>>\nJames P. Womack\n2003.06.01\n" +
+                "<<Clean Code>>\nRobert C. Martin\n2010.01.01\n", outContent.toString());
     }
 
     @Test
     public void testShowBookDetails() throws Exception {
         BibliotecaApp biliotecaApp = new BibliotecaApp();
-
         Books leanThinking = new Books("Lean Thinking", "James P. Womack", "2003.06.01");
         biliotecaApp.showOneBook(leanThinking);
 
         assertEquals("<<Lean Thinking>>\nJames P. Womack\n2003.06.01\n" ,outContent.toString());
-
     }
+
+
 }

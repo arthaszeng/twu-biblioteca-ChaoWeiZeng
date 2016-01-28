@@ -10,13 +10,13 @@ public class BibliotecaApp {
     public void AppInit() {
         BooksData booksData = new BooksData();
         for (Iterator i = booksData.BOOKSDATA.iterator(); i.hasNext();){
-            bookList.add((String) i.next());
+            bookList.add((Books) i.next());
         }
     }
 
     public void showBooks() {
         for (Iterator i = bookList.iterator(); i.hasNext();){
-            System.out.println("<<"+(String) i.next()+">>");
+            showOneBook((Books) i.next());
         }
     }
 
