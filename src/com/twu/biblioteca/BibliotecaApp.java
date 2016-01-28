@@ -14,10 +14,12 @@ public class BibliotecaApp {
         }
     }
 
-    public void showBooks() {
+    public String showBooks() {
+        String buffer = "";
         for (Iterator i = bookList.iterator(); i.hasNext();){
-            showOneBook((Books) i.next());
+            buffer += ((Books) i.next());
         }
+        return buffer;
     }
 
     public String showOneBook(Books book) {

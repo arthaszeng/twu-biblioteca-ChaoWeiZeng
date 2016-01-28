@@ -28,12 +28,11 @@ public class ConsoleOutputTest {
 
     @Test
     public void testShowBooksAfterWelcome() throws Exception {
-        BibliotecaApp biliotecaApp = new BibliotecaApp();
+        BibliotecaApp biliotecaApp = mock(BibliotecaApp.class);
         biliotecaApp.AppInit();
-        biliotecaApp.showBooks();
 
-        assertEquals("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
-                "<<Clean Code>>\tRobert C. Martin\t2010.01.01\n", outContent.toString());
+        when(biliotecaApp.showBooks()).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
+                "<<Clean Code>>\tRobert C. Martin\t2010.01.01\n");
     }
 
     @Test
