@@ -33,9 +33,5 @@ public class BibliotecaApp {
         }
     }
 
-    public static void main(String args[]){
-        BibliotecaApp biliotecaApp = new BibliotecaApp();
-        biliotecaApp.AppInit();
-        biliotecaApp.showBooks();
-    }
+
 }

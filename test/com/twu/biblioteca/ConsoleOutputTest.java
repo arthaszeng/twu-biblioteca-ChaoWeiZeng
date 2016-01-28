@@ -20,7 +20,7 @@ public class ConsoleOutputTest {
 
     @Test
     public void testWelcome() throws Exception {
-        BibliotecaApp biliotecaApp = new BibliotecaApp();
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
 
         System.out.println("hello,world!");
         assertEquals("hello,world!\n", outContent.toString());
@@ -28,19 +28,19 @@ public class ConsoleOutputTest {
 
     @Test
     public void testShowBooksAfterWelcome() throws Exception {
-        BibliotecaApp biliotecaApp = mock(BibliotecaApp.class);
-        biliotecaApp.AppInit();
+        BibliotecaApp bibliotecaApp = mock(BibliotecaApp.class);
+        bibliotecaApp.AppInit();
 
-        when(biliotecaApp.showBooks()).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
+        when(bibliotecaApp.showBooks()).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
                 "<<Clean Code>>\tRobert C. Martin\t2010.01.01\n");
     }
 
     @Test
     public void testShowBookDetails() throws Exception {
-        BibliotecaApp biliotecaApp = mock(BibliotecaApp.class);
+        BibliotecaApp bibliotecaApp = mock(BibliotecaApp.class);
         Books leanThinking = new Books("Lean Thinking", "James P. Womack", "2003.06.01");
 
-        when(biliotecaApp.showOneBook(leanThinking)).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n");
+        when(bibliotecaApp.showOneBook(leanThinking)).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n");
  }
 
 }
