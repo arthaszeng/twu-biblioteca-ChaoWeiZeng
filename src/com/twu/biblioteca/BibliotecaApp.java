@@ -24,7 +24,7 @@ public class BibliotecaApp {
 
     public String showOneBook(Books book) {
         if (book.getName()!=null || book.getAuthor()!= null || book.getDate() != null){
-            String buffer = Format.format(book.getName(), book.getAuthor(), book.getDate());
+            String buffer = BooksFormat.format(book.getName(), book.getAuthor(), book.getDate());
             System.out.println(buffer);
             return buffer;
         }else{

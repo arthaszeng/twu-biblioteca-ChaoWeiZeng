@@ -10,6 +10,7 @@ public class MenuTest {
     public void testOneOption() throws Exception {
         UserMenu userMenu = mock(UserMenu.class);
 
-        when(userMenu.show()).thenReturn("[L] List Books");
+
+        when(userMenu.show()).thenReturn("[ L ] List Books");
     }
 }
