@@ -22,8 +22,8 @@ public class BibliotecaApp {
 
     public void showOneBook(Books book) {
         if (book.getName()!=null || book.getAuthor()!= null || book.getDate() != null){
-            System.out.println("<<"+book.getName()+">>");
-            System.out.println(book.getAuthor());
+            System.out.print("<<" + book.getName() + ">>" + "\t");
+            System.out.print(book.getAuthor() + "\t");
             System.out.println(book.getDate());
         }else{
             System.out.println("error! The book does not exist!");
