@@ -7,7 +7,7 @@ import java.util.List;
 public class BibliotecaApp {
     public static List bookList = new ArrayList();
 
-    public void AppInit() {
+    public void appInit() {
         BooksData booksData = new BooksData();
         for (Iterator i = booksData.BOOKSDATA.iterator(); i.hasNext();){
             bookList.add((Books) i.next());
@@ -17,7 +17,7 @@ public class BibliotecaApp {
     public String showBooks() {
         String buffer = "";
         for (Iterator i = bookList.iterator(); i.hasNext();){
-            buffer += ((Books) i.next());
+            buffer += showOneBook((Books) i.next());
         }
         return buffer;
     }
@@ -33,5 +33,16 @@ public class BibliotecaApp {
         }
     }
 
-
+//
+//    public void selectOption(String whichMenu, String symble) {
+//        switch (whichMenu.toLowerCase()){
+//            case "usermenu":
+//                switch (symble.toLowerCase()){
+//                    case "l":
+//                       showBooks();
+//                        break;
+//                }
+//                break;
+//        }
+//    }
 }

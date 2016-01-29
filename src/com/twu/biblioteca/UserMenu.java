@@ -16,7 +16,13 @@ public class UserMenu {
         return result;
     }
 
+
+
     public void addOption(String optionName) {
         options.add(optionName);
+    }
+
+    public void selectOption(BibliotecaApp bibliotecaApp, String l) {
+        bibliotecaApp.showBooks();
     }
 }

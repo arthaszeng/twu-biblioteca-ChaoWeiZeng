@@ -32,6 +32,7 @@ public class FormatTest {
     @Test
     public void testMenuFormat() throws Exception {
         UserMenu userMenu = mock(UserMenu.class);
+
         when(userMenu.show()).thenReturn("[ L ] List Books");
     }
 

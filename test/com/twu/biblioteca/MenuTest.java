@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.TestCase.assertEquals;
 
 public class MenuTest {
 
@@ -16,15 +16,28 @@ public class MenuTest {
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }
+
     @Test
     public void testOneOption() throws Exception {
 
-        UserMenu userMenu = new UserMenu();
-
 //        UserMenu userMenu = mock(UserMenu.class);
 //        userMenu.addOption("Buy Book");
-
-        assertEquals("[ L ] List Books", userMenu.show());
 //        when(userMenu.show()).thenReturn("[ L ] List Books");
+        UserMenu userMenu = new UserMenu();
+        assertEquals("[ L ] List Books", userMenu.show());
     }
+
+    @Test
+    public void testSelectOption() throws Exception {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
+        bibliotecaApp.appInit();
+
+        UserMenu userMenu = new UserMenu();
+        userMenu.selectOption(bibliotecaApp ,"l");
+        assertEquals("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
+                "<<Clean Code>>\tRobert C. Martin\t2010.01.01\n", outContent.toString());
+    }
+
+
 }
+

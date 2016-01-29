@@ -29,7 +29,7 @@ public class ConsoleOutputTest {
     @Test
     public void testShowBooksAfterWelcome() throws Exception {
         BibliotecaApp bibliotecaApp = mock(BibliotecaApp.class);
-        bibliotecaApp.AppInit();
+        bibliotecaApp.appInit();
 
         when(bibliotecaApp.showBooks()).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n" +
                 "<<Clean Code>>\tRobert C. Martin\t2010.01.01\n");
@@ -38,6 +38,8 @@ public class ConsoleOutputTest {
     @Test
     public void testShowBookDetails() throws Exception {
         BibliotecaApp bibliotecaApp = mock(BibliotecaApp.class);
+        bibliotecaApp.appInit();
+
         Books leanThinking = new Books("Lean Thinking", "James P. Womack", "2003.06.01");
 
         when(bibliotecaApp.showOneBook(leanThinking)).thenReturn("<<Lean Thinking>>\tJames P. Womack\t2003.06.01\n");
