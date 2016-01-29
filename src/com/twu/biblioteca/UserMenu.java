@@ -22,7 +22,11 @@ public class UserMenu {
         options.add(optionName);
     }
 
-    public void selectOption(BibliotecaApp bibliotecaApp, String l) {
-        bibliotecaApp.showBooks();
+    public void selectOption(BibliotecaApp bibliotecaApp, String symble) {
+        switch (symble.toLowerCase()){
+            case "l":
+                bibliotecaApp.showBooks();
+                break;
+        }
     }
 }

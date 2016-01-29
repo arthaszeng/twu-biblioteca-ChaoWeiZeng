@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class ConsoleOutputTest {
+public class AppTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Before

@@ -33,16 +33,4 @@ public class BibliotecaApp {
         }
     }
 
-//
-//    public void selectOption(String whichMenu, String symble) {
-//        switch (whichMenu.toLowerCase()){
-//            case "usermenu":
-//                switch (symble.toLowerCase()){
-//                    case "l":
-//                       showBooks();
-//                        break;
-//                }
-//                break;
-//        }
-//    }
 }
